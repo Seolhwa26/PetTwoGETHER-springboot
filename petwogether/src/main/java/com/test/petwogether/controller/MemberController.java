@@ -40,16 +40,14 @@ public class MemberController {
 
 		return "main/index";
 	}
-
-	//설   
+  
 	@GetMapping("/member/login")
 	public String login() {
 
 		return "member/login";
 	}
 
-	//설
-	@PostMapping(value="/member/loginok")
+	@PostMapping("/member/loginok")
 	public String loginok(String user, String id, String pass, HttpSession session, Model model) {
 
 		String level = "";
@@ -90,8 +88,7 @@ public class MemberController {
 		}
 
 	}
-
-	//설   
+  
 	@GetMapping("/member/logout")
 	public String logout(HttpSession session) {
 
@@ -811,7 +808,7 @@ public class MemberController {
 	// 동균 END
 
 	// 설화 시작
-	//설 1.27
+
 	@GetMapping("/member/adoptlist")
 	public String adoptlist(Model model, String page, HttpServletRequest req) {
 
@@ -929,7 +926,6 @@ public class MemberController {
 		return "member/adoptlist";
 	}
 
-	//설 1.27
 	@GetMapping("/member/adoptlistview")
 	public String adoptlistview(Model model, String page, HttpServletRequest req) {
 
