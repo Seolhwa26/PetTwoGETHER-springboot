@@ -161,42 +161,36 @@ public class MemberDAOImpl implements MemberDAO {
 
 	// 설화 시작
 
-	//설
 	@Override
 	public List<AdoptListDTO> adoptlist(HashMap<String, Integer> map) {
 
 		return sql.selectList("member.adoptlist", map);
 	}
 
-	//설
 	@Override
 	public List<AdoptListDTO> adoptlistdog(HashMap<String, Integer> map) {
 
 		return sql.selectList("member.adoptlistdog", map);
 	}
 
-	//설
 	@Override
 	public List<AdoptListDTO> adoptlistcat(HashMap<String, Integer> map) {
 
 		return sql.selectList("member.adoptlistcat", map);
 	}
 
-	//설
 	@Override
 	public List<AdoptListDTO> adoptlistother(HashMap<String, Integer> map) {
 
 		return sql.selectList("member.adoptlistother", map);
 	}
 
-	//설
 	@Override
 	public AdoptListDTO adoptlistview(String aseq) {
 
 		return sql.selectOne("member.adoptlistview", aseq);
 	}
 
-	//설
 	@Override
 	public int gettotalist(String type) {
 

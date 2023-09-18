@@ -63,24 +63,17 @@ public interface MemberDAO {
 
 	// 설화 시작
 
-	//설
 	List<AdoptListDTO> adoptlist(HashMap<String, Integer> map);
 
-	//설
 	List<AdoptListDTO> adoptlistdog(HashMap<String, Integer> map);
 
-	//설
 	List<AdoptListDTO> adoptlistcat(HashMap<String, Integer> map);
 
-	//설
 	List<AdoptListDTO> adoptlistother(HashMap<String, Integer> map);
 
-	//설
 	AdoptListDTO adoptlistview(String aseq);
 
-	//설
 	int gettotalist(String type);
-
 
 	// 설화 끝
 
