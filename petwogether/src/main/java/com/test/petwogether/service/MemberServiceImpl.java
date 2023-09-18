@@ -200,7 +200,6 @@ public class MemberServiceImpl implements MemberService {
 
 	// 설화 시작
 
-	//설
 	@Override
 	public List<AdoptListDTO> adoptlist(HashMap<String, Integer> map, String type) {
 
@@ -215,14 +214,12 @@ public class MemberServiceImpl implements MemberService {
 		}
 	}
 
-	//설
 	@Override
 	public AdoptListDTO adoptlistview(String aseq) {
 
 		return mdao.adoptlistview(aseq);
 	}
 
-	//설
 	@Override
 	public int getTotallist(String type) {
 

@@ -77,13 +77,10 @@ public interface MemberService {
 
 	// 설화 시작
 
-	//설
 	List<AdoptListDTO> adoptlist(HashMap<String, Integer> map, String type);
 
-	//설
 	AdoptListDTO adoptlistview(String aseq);
 
-	//설
 	int getTotallist(String type);
 
 	// 설화 끝
