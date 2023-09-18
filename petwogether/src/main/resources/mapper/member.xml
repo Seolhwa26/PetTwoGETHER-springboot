@@ -117,37 +117,30 @@
    
    <!-- 설화 시작  -->
    
-   <!-- 설 -->
    <select id="adoptlist" parameterType="java.util.HashMap" resultType="com.test.petwogether.model.AdoptListDTO">
       select * from (select rownum as rnum, l.* from tblAdoptList l order by aseq desc) where rnum between #{begin} and #{end} order by aseq desc
    </select>
    
-   <!-- 설 -->
    <select id="adoptlistdog" parameterType="java.util.HashMap" resultType="com.test.petwogether.model.AdoptListDTO">
       select * from (select rownum as rnum, l.* from tblAdoptList l where atype = '강아지' order by aseq desc) where rnum between #{begin} and #{end} order by aseq desc
    </select>
    
-   <!-- 설 -->
    <select id="adoptlistcat" parameterType="java.util.HashMap" resultType="com.test.petwogether.model.AdoptListDTO">
       select * from (select rownum as rnum, l.* from tblAdoptList l where atype = '고양이' order by aseq desc) where rnum between #{begin} and #{end} order by aseq desc
    </select>
    
-   <!-- 설 -->
    <select id="adoptlistother" parameterType="java.util.HashMap" resultType="com.test.petwogether.model.AdoptListDTO">
       select * from (select rownum as rnum, l.* from tblAdoptList l where atype = '기타' order by aseq desc) where rnum between #{begin} and #{end} order by aseq desc
    </select>
 
-   <!-- 설 -->
    <select id="adoptlistview" parameterType="String" resultType="com.test.petwogether.model.AdoptListDTO">
       select * from tblAdoptlist where aseq = #{aseq}
    </select>
 
-   <!-- 설 -->
    <select id="gettotallist" resultType="Integer">
       select count(*) from tblAdoptList
    </select>
 
-   <!-- 설 -->
    <select id="gettotallist2" parameterType="String" resultType="Integer">
       select count(*) from tblAdoptList where atype = #{type}
    </select>
